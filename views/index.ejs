@@ -1,5 +1,6 @@
 <%- include('header'); %>
 <div id="weather">
+    <% if(error === null){ %>
     <div id="description"><%= description %></div>
         <h1 id="temp"><%= temp %></h1>
         <div id="location"><%= city %></div>
@@ -11,6 +12,12 @@
         <br>
         <input type="submit" value="Save changes">
     </form>
+    <% } else { %>
+        <div class="alert" role="alert">
+            <%= error %>
+        </div>
+        <a href="/" role="button">Try again</a>
+        <% } %>
 </div>
 <%- include('footer'); %>
 
