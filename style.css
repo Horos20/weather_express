@@ -1,0 +1,20 @@
+#description {
+    font-size: large;
+    font-family: sans-serif;
+    background-color: aqua;
+    padding: 5px;
+}
+
+#location {
+    background-color: #49FFB3;
+}
+
+#temp {
+    margin: 1px;
+    background-color: #4EFFD8;
+}
+
+#temp, #location, #description {
+    border-radius: 5px;
+    text-align: center;
+}
