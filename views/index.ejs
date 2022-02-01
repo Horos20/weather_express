@@ -5,9 +5,9 @@
         <div id="location"><%= city %></div>
 </div>
 <div>
-    <form id="change-city">
-        <label>City</label>
-        <input type="text" id="city-name">
+    <form id="change-city" method="post" action="/">
+        <label for="city-name">City</label>
+        <input type="text" id="city-name" name="cityname">
         <br>
         <input type="submit" value="Save changes">
     </form>
